@@ -24,7 +24,7 @@ export function CityMap({
   plants = [],
   height = '400px',
   zoom = 12,
-  center = [17.4126, 78.4772],
+  center = [28.6139, 77.2090],
   onHotspotClick,
 }: CityMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);

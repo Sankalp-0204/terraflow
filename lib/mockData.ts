@@ -14,55 +14,55 @@ import type {
 // ─── Wards ───────────────────────────────────────────────────────────────────
 export const WARDS: Ward[] = [
   { id: 'all', name: 'All Wards', population: 0, area: 0 },
-  { id: 'w1', name: 'Ward 1 – Ashok Nagar', population: 48200, area: 3.2 },
-  { id: 'w2', name: 'Ward 2 – Banjara Hills', population: 62500, area: 4.7 },
-  { id: 'w3', name: 'Ward 3 – Charminar', population: 71000, area: 2.9 },
-  { id: 'w4', name: 'Ward 4 – Dilsukhnagar', population: 55400, area: 3.8 },
-  { id: 'w5', name: 'Ward 5 – ECIL Cross Roads', population: 39800, area: 5.1 },
-  { id: 'w6', name: 'Ward 6 – Film Nagar', population: 28300, area: 6.2 },
+  { id: 'w1', name: 'Ward 1 – Connaught Place', population: 52400, area: 2.8 },
+  { id: 'w2', name: 'Ward 2 – Lajpat Nagar',   population: 68700, area: 3.5 },
+  { id: 'w3', name: 'Ward 3 – Karol Bagh',      population: 74200, area: 3.1 },
+  { id: 'w4', name: 'Ward 4 – Rohini',          population: 61000, area: 5.4 },
+  { id: 'w5', name: 'Ward 5 – Dwarka',          population: 45300, area: 6.8 },
+  { id: 'w6', name: 'Ward 6 – Saket',           population: 31800, area: 4.2 },
 ];
 
 // ─── Waste Hotspots ──────────────────────────────────────────────────────────
 export const WASTE_HOTSPOTS: WasteHotspot[] = [
   {
-    id: 'h1', wardId: 'w3', lat: 17.3616, lng: 78.4747,
-    severity: 'critical', wasteVolume: 48, daysSinceCollection: 9,
-    fireRiskScore: 87, label: 'Charminar Market',
+    id: 'h1', wardId: 'w3', lat: 28.6514, lng: 77.1907,
+    severity: 'critical', wasteVolume: 52, daysSinceCollection: 10,
+    fireRiskScore: 91, label: 'Karol Bagh Market',
   },
   {
-    id: 'h2', wardId: 'w1', lat: 17.4399, lng: 78.4983,
-    severity: 'high', wasteVolume: 31, daysSinceCollection: 6,
-    fireRiskScore: 63, label: 'Ashok Nagar Junction',
+    id: 'h2', wardId: 'w2', lat: 28.5671, lng: 77.2431,
+    severity: 'critical', wasteVolume: 47, daysSinceCollection: 8,
+    fireRiskScore: 85, label: 'Lajpat Nagar Junction',
   },
   {
-    id: 'h3', wardId: 'w4', lat: 17.3687, lng: 78.5247,
-    severity: 'high', wasteVolume: 27, daysSinceCollection: 5,
-    fireRiskScore: 58, label: 'Dilsukhnagar Bus Stand',
+    id: 'h3', wardId: 'w4', lat: 28.7041, lng: 77.1025,
+    severity: 'high', wasteVolume: 33, daysSinceCollection: 6,
+    fireRiskScore: 67, label: 'Rohini Sector 7 Dump',
   },
   {
-    id: 'h4', wardId: 'w2', lat: 17.4126, lng: 78.4488,
-    severity: 'medium', wasteVolume: 18, daysSinceCollection: 3,
-    fireRiskScore: 34, label: 'Road No. 12 Dumpyard',
+    id: 'h4', wardId: 'w1', lat: 28.6315, lng: 77.2167,
+    severity: 'high', wasteVolume: 22, daysSinceCollection: 5,
+    fireRiskScore: 54, label: 'Connaught Place Back Lane',
   },
   {
-    id: 'h5', wardId: 'w5', lat: 17.4786, lng: 78.5531,
-    severity: 'medium', wasteVolume: 15, daysSinceCollection: 3,
-    fireRiskScore: 29, label: 'ECIL Road Side',
+    id: 'h5', wardId: 'w5', lat: 28.5921, lng: 77.0460,
+    severity: 'medium', wasteVolume: 17, daysSinceCollection: 4,
+    fireRiskScore: 38, label: 'Dwarka Sector 10 Yard',
   },
   {
-    id: 'h6', wardId: 'w6', lat: 17.4126, lng: 78.3909,
-    severity: 'low', wasteVolume: 8, daysSinceCollection: 1,
-    fireRiskScore: 12, label: 'Film Nagar Park',
+    id: 'h6', wardId: 'w3', lat: 28.6562, lng: 77.2310,
+    severity: 'medium', wasteVolume: 14, daysSinceCollection: 3,
+    fireRiskScore: 31, label: 'Old Delhi Khatik Chowk',
   },
   {
-    id: 'h7', wardId: 'w3', lat: 17.3502, lng: 78.4831,
-    severity: 'critical', wasteVolume: 55, daysSinceCollection: 11,
-    fireRiskScore: 93, label: 'Old Bridge Colony',
+    id: 'h7', wardId: 'w6', lat: 28.5244, lng: 77.2167,
+    severity: 'low', wasteVolume: 9,  daysSinceCollection: 2,
+    fireRiskScore: 15, label: 'Saket District Centre',
   },
   {
-    id: 'h8', wardId: 'w1', lat: 17.4502, lng: 78.5012,
-    severity: 'low', wasteVolume: 6, daysSinceCollection: 2,
-    fireRiskScore: 9, label: 'Nehru Park Corner',
+    id: 'h8', wardId: 'w2', lat: 28.5494, lng: 77.2513,
+    severity: 'low', wasteVolume: 6,  daysSinceCollection: 1,
+    fireRiskScore: 8,  label: 'Nehru Place Side Road',
   },
 ];
 
@@ -71,32 +71,31 @@ export const AIR_QUALITY_READINGS: AirQualityReading[] = WARDS.filter(
   (w) => w.id !== 'all'
 ).map((ward, i) => ({
   timestamp: '2026-10-13T14:30:00.000Z',
-  pm25: [68, 42, 124, 77, 51, 35][i] ?? 55,
-  pm10: [112, 68, 198, 130, 84, 54][i] ?? 90,
-  co: [2.1, 1.4, 4.8, 3.2, 1.9, 1.1][i] ?? 2.0,
-  no2: [44, 28, 88, 55, 32, 21][i] ?? 40,
-  aqi: [152, 87, 220, 168, 112, 76][i] ?? 120,
+  pm25: [148, 112, 187, 96,  74,  55][i] ?? 110,
+  pm10: [224, 178, 298, 154, 118, 88 ][i] ?? 160,
+  co:   [3.8, 2.9, 5.6, 2.4, 1.8, 1.3][i] ?? 3.0,
+  no2:  [88,  66,  112, 52,  38,  27 ][i] ?? 65,
+  aqi:  [210, 162, 268, 140, 108, 82 ][i] ?? 160,
   wardId: ward.id,
 }));
 
 // ─── Pollution Trend (last 24 h) ─────────────────────────────────────────────
 export function generatePollutionTrend(wardId: string): PollutionDataPoint[] {
   const seed = wardId === 'all' ? 1 : parseInt(wardId.replace('w', ''), 10);
-  const base25 = [68, 42, 124, 77, 51, 35][seed - 1] ?? 60;
-  const baseCo = [2.1, 1.4, 4.8, 3.2, 1.9, 1.1][seed - 1] ?? 2.0;
+  const base25 = [148, 112, 187, 96, 74, 55][seed - 1] ?? 110;
+  const baseCo = [3.8, 2.9, 5.6, 2.4, 1.8, 1.3][seed - 1] ?? 3.0;
 
-  // Use deterministic noise based on seed + index to avoid unstable new Date()/Math.random()
   function seededNoise(idx: number): number {
     const x = Math.sin(seed * 100 + idx * 37.7) * 43758.5453;
     return ((x - Math.floor(x)) - 0.5) * 0.3;
   }
 
   return Array.from({ length: 24 }, (_, i) => {
-    const hour = i;
+    const hour  = i;
     const label = `${String(hour).padStart(2, '0')}:00`;
-    const pm25 = +(base25 * (0.7 + 0.5 * Math.sin((i / 24) * Math.PI) + seededNoise(i))).toFixed(1);
-    const co = +(baseCo * (0.8 + 0.35 * Math.sin((i / 24) * Math.PI) + seededNoise(i + 100))).toFixed(2);
-    const aqi = Math.round(pm25 * 1.8 + co * 8);
+    const pm25  = +(base25 * (0.7 + 0.5 * Math.sin((i / 24) * Math.PI) + seededNoise(i))).toFixed(1);
+    const co    = +(baseCo * (0.8 + 0.35 * Math.sin((i / 24) * Math.PI) + seededNoise(i + 100))).toFixed(2);
+    const aqi   = Math.round(pm25 * 1.8 + co * 8);
     return { time: label, pm25, co, aqi };
   });
 }
@@ -104,34 +103,34 @@ export function generatePollutionTrend(wardId: string): PollutionDataPoint[] {
 // ─── Compost Plants ───────────────────────────────────────────────────────────
 export const COMPOST_PLANTS: CompostPlant[] = [
   {
-    id: 'cp1', name: 'Charminar Compost Unit', wardId: 'w3',
-    lat: 17.3590, lng: 78.4800, capacity: 120, currentLoad: 118,
-    temperature: 67, methaneLevel: 420, status: 'critical',
-    lastInspection: '2026-10-09', efficiency: 58,
+    id: 'cp1', name: 'Karol Bagh Compost Unit',    wardId: 'w3',
+    lat: 28.6480, lng: 77.1950, capacity: 130, currentLoad: 127,
+    temperature: 69, methaneLevel: 440, status: 'critical',
+    lastInspection: '2026-10-09', efficiency: 54,
   },
   {
-    id: 'cp2', name: 'Banjara Hills Green Plant', wardId: 'w2',
-    lat: 17.4130, lng: 78.4400, capacity: 80, currentLoad: 52,
-    temperature: 55, methaneLevel: 180, status: 'optimal',
-    lastInspection: '2026-10-12', efficiency: 91,
+    id: 'cp2', name: 'Lajpat Nagar Green Plant',   wardId: 'w2',
+    lat: 28.5650, lng: 77.2460, capacity: 90,  currentLoad: 58,
+    temperature: 54, methaneLevel: 170, status: 'optimal',
+    lastInspection: '2026-10-12', efficiency: 93,
   },
   {
-    id: 'cp3', name: 'Dilsukhnagar Transfer Station', wardId: 'w4',
-    lat: 17.3700, lng: 78.5300, capacity: 100, currentLoad: 88,
-    temperature: 61, methaneLevel: 310, status: 'warning',
-    lastInspection: '2026-10-11', efficiency: 74,
+    id: 'cp3', name: 'Rohini Transfer Station',    wardId: 'w4',
+    lat: 28.7060, lng: 77.1050, capacity: 110, currentLoad: 96,
+    temperature: 63, methaneLevel: 320, status: 'warning',
+    lastInspection: '2026-10-11', efficiency: 71,
   },
   {
-    id: 'cp4', name: 'ECIL Road Processing Yard', wardId: 'w5',
-    lat: 17.4800, lng: 78.5490, capacity: 60, currentLoad: 34,
-    temperature: 52, methaneLevel: 145, status: 'optimal',
-    lastInspection: '2026-10-13', efficiency: 95,
+    id: 'cp4', name: 'Dwarka Processing Yard',     wardId: 'w5',
+    lat: 28.5900, lng: 77.0490, capacity: 70,  currentLoad: 38,
+    temperature: 51, methaneLevel: 140, status: 'optimal',
+    lastInspection: '2026-10-13', efficiency: 96,
   },
   {
-    id: 'cp5', name: 'Film Nagar Organic Hub', wardId: 'w6',
-    lat: 17.4140, lng: 78.3850, capacity: 40, currentLoad: 38,
-    temperature: 58, methaneLevel: 250, status: 'warning',
-    lastInspection: '2026-10-10', efficiency: 79,
+    id: 'cp5', name: 'Saket Organic Hub',          wardId: 'w6',
+    lat: 28.5260, lng: 77.2190, capacity: 45,  currentLoad: 41,
+    temperature: 59, methaneLevel: 260, status: 'warning',
+    lastInspection: '2026-10-10', efficiency: 77,
   },
 ];
 
@@ -140,108 +139,108 @@ export const INCIDENTS: Incident[] = [
   {
     id: 'i1', wardId: 'w3', type: 'open-fire', severity: 'critical',
     status: 'escalated',
-    title: 'Open waste fire at Old Bridge Colony',
+    title: 'Open waste fire at Karol Bagh Market',
     description:
-      'Large open fire detected at the illegal dumpyard near Old Bridge Colony. Smoke visible from 2 km radius. AQI spiked to 248 locally. Fire brigade dispatched.',
-    reportedAt: '2026-10-13T11:14:00Z',
-    updatedAt: '2026-10-13T13:40:00Z',
-    location: 'Old Bridge Colony, Ward 3',
-    lat: 17.3502, lng: 78.4831,
-    assignedTo: 'Fire Station 7 + GHMC Zone 3',
-    responderCount: 6,
+      'Large open fire detected at the illegal dumpyard behind Karol Bagh Market. Smoke visible from 3 km radius. AQI spiked to 312 locally. Delhi Fire Service and DPCC teams dispatched.',
+    reportedAt:  '2026-10-13T11:14:00Z',
+    updatedAt:   '2026-10-13T13:40:00Z',
+    location:    'Karol Bagh Market, Ward 3',
+    lat: 28.6514, lng: 77.1907,
+    assignedTo:  'Delhi Fire Station 12 + MCD Zone 3',
+    responderCount: 8,
     estimatedResolution: '2026-10-13T16:00:00Z',
   },
   {
     id: 'i2', wardId: 'w3', type: 'air-quality', severity: 'critical',
     status: 'in-progress',
-    title: 'PM2.5 exceeds 200 µg/m³ in Charminar area',
+    title: 'PM2.5 exceeds 300 µg/m³ near Old Delhi',
     description:
-      'Monitoring station at Charminar Market recorded PM2.5 of 224 µg/m³ at 10:30 AM, well beyond the NAAQS 24-hour limit of 60 µg/m³. Correlated with nearby hotspot combustion.',
-    reportedAt: '2026-10-13T10:32:00Z',
-    updatedAt: '2026-10-13T14:05:00Z',
-    location: 'Charminar Market vicinity, Ward 3',
-    lat: 17.3616, lng: 78.4747,
-    assignedTo: 'TSPCB Mobile Unit',
-    responderCount: 2,
+      'DPCC monitoring station at Old Delhi recorded PM2.5 of 312 µg/m³ at 10:30 AM — more than 5× the NAAQS 24-hour limit. Correlated with nearby hotspot combustion and stubble burning drift.',
+    reportedAt:  '2026-10-13T10:32:00Z',
+    updatedAt:   '2026-10-13T14:05:00Z',
+    location:    'Old Delhi Khatik Chowk, Ward 3',
+    lat: 28.6562, lng: 77.2310,
+    assignedTo:  'DPCC Mobile Monitoring Unit',
+    responderCount: 3,
   },
   {
-    id: 'i3', wardId: 'w1', type: 'illegal-dumping', severity: 'high',
+    id: 'i3', wardId: 'w2', type: 'illegal-dumping', severity: 'high',
     status: 'open',
-    title: 'Illegal commercial waste dumping detected',
+    title: 'Illegal construction debris dumping at Lajpat Nagar',
     description:
-      'CCTV footage confirmed unauthorized dumping of construction debris by a private contractor at Ashok Nagar Junction. Waste volume estimated at 18 cubic metres.',
-    reportedAt: '2026-10-13T08:20:00Z',
-    updatedAt: '2026-10-13T08:20:00Z',
-    location: 'Ashok Nagar Junction, Ward 1',
-    lat: 17.4399, lng: 78.4983,
-    assignedTo: undefined,
+      'CCTV footage confirmed unauthorized dumping of construction debris by a private contractor at Lajpat Nagar Junction. Waste volume estimated at 22 cubic metres.',
+    reportedAt:  '2026-10-13T08:20:00Z',
+    updatedAt:   '2026-10-13T08:20:00Z',
+    location:    'Lajpat Nagar Junction, Ward 2',
+    lat: 28.5671, lng: 77.2431,
+    assignedTo:  undefined,
     responderCount: 0,
   },
   {
     id: 'i4', wardId: 'w4', type: 'overflow', severity: 'high',
     status: 'in-progress',
-    title: 'Dumpyard overflow at Dilsukhnagar Bus Stand',
+    title: 'Dumpyard overflow at Rohini Sector 7',
     description:
-      'Collection bin capacity exceeded by 180%. Waste spilling onto pedestrian footpath. Risk of self-ignition elevated due to decomposing organic matter.',
-    reportedAt: '2026-10-13T07:55:00Z',
-    updatedAt: '2026-10-13T13:10:00Z',
-    location: 'Dilsukhnagar Bus Stand, Ward 4',
-    lat: 17.3687, lng: 78.5247,
-    assignedTo: 'GHMC Collection Team D',
-    responderCount: 3,
+      'Collection bin capacity exceeded by 200%. Waste spilling onto pedestrian footpath in Rohini Sector 7. Risk of self-ignition elevated due to decomposing organic matter.',
+    reportedAt:  '2026-10-13T07:55:00Z',
+    updatedAt:   '2026-10-13T13:10:00Z',
+    location:    'Rohini Sector 7, Ward 4',
+    lat: 28.7041, lng: 77.1025,
+    assignedTo:  'MCD Collection Team D',
+    responderCount: 4,
     estimatedResolution: '2026-10-13T15:30:00Z',
   },
   {
     id: 'i5', wardId: 'w3', type: 'compost-alert', severity: 'high',
     status: 'open',
-    title: 'Charminar compost plant at critical capacity',
+    title: 'Karol Bagh compost plant at critical capacity',
     description:
-      'Plant operating at 98% of capacity. Methane levels at 420 ppm (threshold: 350 ppm). Urgent waste diversion to alternate facilities required.',
-    reportedAt: '2026-10-13T09:45:00Z',
-    updatedAt: '2026-10-13T09:45:00Z',
-    location: 'Charminar Compost Unit, Ward 3',
-    lat: 17.3590, lng: 78.4800,
-    assignedTo: undefined,
+      'Plant operating at 98% of capacity. Methane levels at 440 ppm (threshold: 350 ppm). Urgent waste diversion to Dwarka Processing Yard required.',
+    reportedAt:  '2026-10-13T09:45:00Z',
+    updatedAt:   '2026-10-13T09:45:00Z',
+    location:    'Karol Bagh Compost Unit, Ward 3',
+    lat: 28.6480, lng: 77.1950,
+    assignedTo:  undefined,
     responderCount: 0,
   },
   {
-    id: 'i6', wardId: 'w2', type: 'overflow', severity: 'medium',
+    id: 'i6', wardId: 'w1', type: 'overflow', severity: 'medium',
     status: 'in-progress',
-    title: 'Bin overflow on Road No. 12',
+    title: 'Bin overflow near Connaught Place metro',
     description:
-      'Residential collection bins overflowing at Road No. 12 residential sector. Collection was missed due to vehicle breakdown on 11 Oct.',
-    reportedAt: '2026-10-13T06:30:00Z',
-    updatedAt: '2026-10-13T12:00:00Z',
-    location: 'Road No. 12, Banjara Hills',
-    lat: 17.4126, lng: 78.4488,
-    assignedTo: 'GHMC Collection Team B',
+      'Residential collection bins overflowing near CP Metro Gate 4. Collection was missed due to vehicle breakdown on 11 Oct.',
+    reportedAt:  '2026-10-13T06:30:00Z',
+    updatedAt:   '2026-10-13T12:00:00Z',
+    location:    'Connaught Place, Ward 1',
+    lat: 28.6315, lng: 77.2167,
+    assignedTo:  'MCD Collection Team B',
     responderCount: 2,
     estimatedResolution: '2026-10-13T17:00:00Z',
   },
   {
     id: 'i7', wardId: 'w5', type: 'illegal-dumping', severity: 'medium',
     status: 'open',
-    title: 'Roadside dumping near ECIL',
+    title: 'Roadside dumping near Dwarka Sector 10',
     description:
-      'Household mixed waste being dumped on road margin near ECIL Cross Roads. Estimated volume: 5 cubic metres.',
-    reportedAt: '2026-10-13T05:10:00Z',
-    updatedAt: '2026-10-13T05:10:00Z',
-    location: 'ECIL Cross Roads, Ward 5',
-    lat: 17.4786, lng: 78.5531,
-    assignedTo: undefined,
+      'Household mixed waste being dumped on road margin near Dwarka Sector 10 underpass. Estimated volume: 7 cubic metres.',
+    reportedAt:  '2026-10-13T05:10:00Z',
+    updatedAt:   '2026-10-13T05:10:00Z',
+    location:    'Dwarka Sector 10, Ward 5',
+    lat: 28.5921, lng: 77.0460,
+    assignedTo:  undefined,
     responderCount: 0,
   },
   {
     id: 'i8', wardId: 'w6', type: 'overflow', severity: 'low',
     status: 'resolved',
-    title: 'Minor bin overflow at Film Nagar Park',
+    title: 'Minor bin overflow at Saket District Centre',
     description:
-      'Single overflowing bin collected and area sanitized by morning crew.',
-    reportedAt: '2026-10-13T04:00:00Z',
-    updatedAt: '2026-10-13T06:45:00Z',
-    location: 'Film Nagar Park, Ward 6',
-    lat: 17.4126, lng: 78.3909,
-    assignedTo: 'GHMC Collection Team F',
+      'Single overflowing bin collected and area sanitized by the morning MCD crew.',
+    reportedAt:  '2026-10-13T04:00:00Z',
+    updatedAt:   '2026-10-13T06:45:00Z',
+    location:    'Saket District Centre, Ward 6',
+    lat: 28.5244, lng: 77.2167,
+    assignedTo:  'MCD Collection Team F',
     responderCount: 1,
   },
 ];
@@ -249,80 +248,80 @@ export const INCIDENTS: Incident[] = [
 // ─── Fleet ───────────────────────────────────────────────────────────────────
 export const VEHICLES: CollectionVehicle[] = [
   {
-    id: 'v1', registrationNo: 'TS09 EA 4421', type: 'compactor',
-    wardId: 'w1', status: 'active', lat: 17.442, lng: 78.501,
-    driverName: 'Ramesh Kumar', lastCollectionAt: '2026-10-13T12:30:00Z',
-    wasteCollectedToday: 4.2, fuelLevel: 72, routeId: 'r1',
+    id: 'v1', registrationNo: 'DL01 GA 4421', type: 'compactor',
+    wardId: 'w1', status: 'active', lat: 28.633, lng: 77.219,
+    driverName: 'Rajesh Sharma', lastCollectionAt: '2026-10-13T12:30:00Z',
+    wasteCollectedToday: 4.8, fuelLevel: 74, routeId: 'r1',
   },
   {
-    id: 'v2', registrationNo: 'TS09 EA 4422', type: 'tipper',
-    wardId: 'w3', status: 'active', lat: 17.358, lng: 78.478,
-    driverName: 'Suresh Babu', lastCollectionAt: '2026-10-13T11:15:00Z',
-    wasteCollectedToday: 6.8, fuelLevel: 45, routeId: 'r2',
+    id: 'v2', registrationNo: 'DL03 GB 4422', type: 'tipper',
+    wardId: 'w3', status: 'active', lat: 28.650, lng: 77.192,
+    driverName: 'Sunil Verma', lastCollectionAt: '2026-10-13T11:15:00Z',
+    wasteCollectedToday: 7.2, fuelLevel: 48, routeId: 'r2',
   },
   {
-    id: 'v3', registrationNo: 'TS09 EB 1102', type: 'compactor',
-    wardId: 'w2', status: 'active', lat: 17.415, lng: 78.445,
-    driverName: 'Anitha Devi', lastCollectionAt: '2026-10-13T13:00:00Z',
-    wasteCollectedToday: 3.5, fuelLevel: 88, routeId: 'r3',
+    id: 'v3', registrationNo: 'DL02 GC 1102', type: 'compactor',
+    wardId: 'w2', status: 'active', lat: 28.569, lng: 77.245,
+    driverName: 'Priya Singh', lastCollectionAt: '2026-10-13T13:00:00Z',
+    wasteCollectedToday: 3.9, fuelLevel: 86, routeId: 'r3',
   },
   {
-    id: 'v4', registrationNo: 'TS09 EB 2234', type: 'mini-truck',
-    wardId: 'w4', status: 'idle', lat: 17.371, lng: 78.527,
-    driverName: 'Naresh Reddy', lastCollectionAt: '2026-10-13T09:30:00Z',
-    wasteCollectedToday: 2.1, fuelLevel: 61, routeId: undefined,
+    id: 'v4', registrationNo: 'DL04 GD 2234', type: 'mini-truck',
+    wardId: 'w4', status: 'idle', lat: 28.706, lng: 77.104,
+    driverName: 'Anil Kumar', lastCollectionAt: '2026-10-13T09:30:00Z',
+    wasteCollectedToday: 2.4, fuelLevel: 63, routeId: undefined,
   },
   {
-    id: 'v5', registrationNo: 'TS09 EC 5531', type: 'compactor',
-    wardId: 'w5', status: 'maintenance', lat: 17.479, lng: 78.552,
-    driverName: 'Priya Lakshmi', lastCollectionAt: '2026-10-12T16:00:00Z',
-    wasteCollectedToday: 0, fuelLevel: 20, routeId: undefined,
+    id: 'v5', registrationNo: 'DL05 GE 5531', type: 'compactor',
+    wardId: 'w5', status: 'maintenance', lat: 28.592, lng: 77.047,
+    driverName: 'Kavita Devi', lastCollectionAt: '2026-10-12T16:00:00Z',
+    wasteCollectedToday: 0, fuelLevel: 22, routeId: undefined,
   },
   {
-    id: 'v6', registrationNo: 'TS09 EC 7841', type: 'tipper',
-    wardId: 'w6', status: 'active', lat: 17.411, lng: 78.389,
-    driverName: 'Mohan Das', lastCollectionAt: '2026-10-13T13:20:00Z',
-    wasteCollectedToday: 1.8, fuelLevel: 79, routeId: 'r4',
+    id: 'v6', registrationNo: 'DL06 GF 7841', type: 'tipper',
+    wardId: 'w6', status: 'active', lat: 28.525, lng: 77.218,
+    driverName: 'Mohan Lal', lastCollectionAt: '2026-10-13T13:20:00Z',
+    wasteCollectedToday: 2.1, fuelLevel: 81, routeId: 'r4',
   },
 ];
 
 export const ROUTES: CollectionRoute[] = [
   {
-    id: 'r1', wardId: 'w1', name: 'Ashok Nagar Morning Route',
+    id: 'r1', wardId: 'w1', name: 'Connaught Place Morning Route',
     vehicleId: 'v1', scheduledTime: '06:00',
-    completionPercent: 68, distanceKm: 12.4,
+    completionPercent: 72, distanceKm: 11.6,
     stops: [
-      { lat: 17.440, lng: 78.498, label: 'Sector A' },
-      { lat: 17.443, lng: 78.502, label: 'Sector B' },
-      { lat: 17.445, lng: 78.506, label: 'Sector C' },
+      { lat: 28.632, lng: 77.218, label: 'Inner Circle' },
+      { lat: 28.634, lng: 77.221, label: 'Middle Circle' },
+      { lat: 28.636, lng: 77.224, label: 'Outer Circle' },
     ],
   },
   {
-    id: 'r2', wardId: 'w3', name: 'Charminar High-Priority Run',
+    id: 'r2', wardId: 'w3', name: 'Karol Bagh High-Priority Run',
     vehicleId: 'v2', scheduledTime: '05:30',
-    completionPercent: 42, distanceKm: 8.7,
+    completionPercent: 38, distanceKm: 9.2,
     stops: [
-      { lat: 17.360, lng: 78.475, label: 'Market Sector' },
-      { lat: 17.363, lng: 78.479, label: 'Residential Block' },
+      { lat: 28.651, lng: 77.190, label: 'Market Block' },
+      { lat: 28.654, lng: 77.194, label: 'Residential Zone' },
     ],
   },
   {
-    id: 'r3', wardId: 'w2', name: 'Banjara Hills PM Route',
+    id: 'r3', wardId: 'w2', name: 'Lajpat Nagar PM Route',
     vehicleId: 'v3', scheduledTime: '14:00',
-    completionPercent: 25, distanceKm: 15.2,
+    completionPercent: 28, distanceKm: 14.8,
     stops: [
-      { lat: 17.413, lng: 78.442, label: 'Zone 1' },
-      { lat: 17.416, lng: 78.448, label: 'Zone 2' },
-      { lat: 17.410, lng: 78.452, label: 'Zone 3' },
+      { lat: 28.565, lng: 77.242, label: 'Central Market' },
+      { lat: 28.568, lng: 77.246, label: 'Part II' },
+      { lat: 28.571, lng: 77.250, label: 'Part IV' },
     ],
   },
   {
-    id: 'r4', wardId: 'w6', name: 'Film Nagar Standard Loop',
+    id: 'r4', wardId: 'w6', name: 'Saket Standard Loop',
     vehicleId: 'v6', scheduledTime: '07:00',
-    completionPercent: 90, distanceKm: 9.3,
+    completionPercent: 88, distanceKm: 10.1,
     stops: [
-      { lat: 17.413, lng: 78.387, label: 'Block A' },
-      { lat: 17.415, lng: 78.392, label: 'Block B' },
+      { lat: 28.524, lng: 77.215, label: 'Select City Walk Area' },
+      { lat: 28.527, lng: 77.220, label: 'MGF Metropolitan' },
     ],
   },
 ];
@@ -371,7 +370,6 @@ export function getKPIData(wardId: string): KPIData {
     0
   );
 
-  // Collection efficiency = completed routes / scheduled
   const efficiency = Math.round(
     filteredVehicles.length > 0
       ? (activeVehicles / filteredVehicles.length) * 100
@@ -402,8 +400,8 @@ export function getRiskDistribution(wardId: string): RiskDistributionItem[] {
 
   return [
     { level: 'Critical', count: counts.critical, color: '#ef4444' },
-    { level: 'High', count: counts.high, color: '#f97316' },
-    { level: 'Medium', count: counts.medium, color: '#eab308' },
-    { level: 'Low', count: counts.low, color: '#22c55e' },
+    { level: 'High',     count: counts.high,     color: '#f97316' },
+    { level: 'Medium',   count: counts.medium,   color: '#eab308' },
+    { level: 'Low',      count: counts.low,      color: '#22c55e' },
   ];
 }
